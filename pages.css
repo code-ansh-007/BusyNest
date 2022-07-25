@@ -1,0 +1,143 @@
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+    --fw-bold: 900;
+}
+
+.about p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.box-text,
+em {
+    font-size: 1.5rem;
+}
+
+.box-img {
+    padding-top: 30px;
+}
+
+@media (max-width: 992px) {
+
+    .box-text,
+    em {
+        font-size: 15px;
+    }
+
+    .box-img {
+        padding-top: 0;
+    }
+
+}
+
+@media (min-width: 992px){
+    .about p{
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 700px){
+    .box-text{
+        padding: 0;
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 700px){
+    .about p{
+        font-size: 1.2rem;
+    }
+}
+
+
+
+body {
+    background: var(--light);
+}
+
+.con {
+    text-align: center;
+}
+
+.con p {
+    font-family: sans-serif;
+}
+
+.sub-title {
+    font-size: 21px;
+}
+
+.main-title {
+    font-family: 'Bebas Neue';
+    font-size: 35px;
+    background-color: #73A9AD;
+    padding-top: 5px;
+}
+
+.main-title-about {
+    font-family: 'Bebas Neue';
+    font-size: 35px;
+    background-color: #73A9AD;
+    padding-top: 5px;
+    text-align: center;
+}
+
+/* MAIN CONTAINER */
+
+hr {
+    border-top: 5px dotted #aaacac;
+    border-style: none;
+    background-color: white;
+    border-top-style: dotted;
+    margin: auto;
+    width: 3rem;
+}
+
+.box {
+    margin: 2rem;
+}
+
+em {
+    font-weight: var(--fw-bold);
+}
+
+.box-img {
+    /* width: 13vw; */
+    /* padding: 20px; */
+    /* margin: 20px; */
+    width: 33vw;
+}
+
+.box-1 {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+        "box-text img-div";
+    place-items: center;
+}
+
+.box-2 {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+        "box-text img-div";
+    place-items: center;
+}
+
+.box-3 {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+        "box-text img-div";
+    place-items: center;
+}
+
+.box-text {
+    margin-top: 1rem;
+    /* padding: 0 100px; */
+}

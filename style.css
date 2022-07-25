@@ -1,0 +1,629 @@
+:root {
+    --main-bg-color: rgb(232, 232, 232);
+    /*background*/
+    --bluish-cyan: #68aaad;
+    /*for nav*/
+    --bluish-cyan-light: #90C8AC;
+    /*for carousel*/
+    --greenish-cyan: #c2ec9b;
+    /*footer*/
+
+    --ff-primary: 'Be Vietnam Pro', sans-serif;
+    --ff-body: var(--ff-primary);
+    --ff-heading: var(--ff-primary);
+
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 900;
+
+    --fs-300: .8125rem;
+    --fs-400: .875rem;
+    --fs-500: 0.9375rem;
+    --fs-600: 1rem;
+    --fs-650: 1.55rem;
+    --fs-700: 1.875rem;
+    --fs-800: 2rem;
+    --fs-900: 3.5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 600px) {
+    .columns {
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-areas:
+            "basic pro premium";
+        margin-left: 7vw;
+    }
+
+    .pricing {
+        width: 25vw;
+        min-width: 200px;
+        margin: 0 auto;
+    }
+
+    .header {
+        font-size: 15px;
+    }
+
+    .grey {
+        font-size: 18px;
+    }
+
+    .li-font {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) {
+    .vertical-sep {
+        border-right: 1.3px solid rgb(232, 232, 232);
+    }
+
+    .carousel-control-prev-icon {
+        display: block;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+        margin-right: 50px;
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+        margin-left: 50px;
+    }
+
+    .carousel-form-grid {
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-areas:
+            "carousel form";
+    }
+
+    .carousel {
+        /* width: 500px; */
+        max-width: 900px;
+        margin-left: 70px;
+    }
+
+    .login-big {
+        background-color: var(--bluish-cyan);
+        padding: 30px;
+        padding-bottom: 0;
+        margin: 100px 60px 0 30px;
+        /* margin: 100px 30px; */
+        height: 70%;
+        text-align: center;
+        width: 23vw;
+    }
+
+    .dont-have {
+        font-size: var(--fs-400);
+    }
+
+    .sign-in {
+        font-size: 2.5vw;
+        font-family: var(--ff-primary);
+        font-weight: var(--fw-bold);
+    }
+
+    input {
+        width: 250px;
+        border-radius: 50px;
+        border: none;
+        height: 50px;
+        padding-left: 20px;
+    }
+
+    ::placeholder {
+        padding-left: 5px;
+    }
+
+    .input-div {
+        margin-top: 27px;
+    }
+
+    form button {
+        margin-top: 50px;
+        border: none;
+        border-radius: 20px;
+        background-color: #fff;
+        padding: 6px 12px 6px 12px;
+        font-size: 1.3rem;
+        color: rgb(113, 113, 113);
+        margin-bottom: 25px;
+        font-weight: var(--fw-regular);
+    }
+
+    form a {
+        color: rgb(79, 79, 137);
+    }
+
+    .main-container {
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-areas:
+            "box-1 box-2 box-3";
+        /* padding: 0; */
+        margin-bottom: 60px;
+    }
+
+    .box-img {
+        width: 10rem;
+    }
+
+    .box-text {
+        font-size: 1.5vw;
+    }
+
+    .small-hr{
+        display: none;
+    }
+
+    .box-2 {
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-areas:
+            "box-text box-img";
+    }
+
+    .box-1,
+    .box-2 {
+        border-right: 2px solid rgb(146, 146, 146);
+        padding-right: 20px;
+    }
+
+    .bottom-left {
+        /* this should be in media query*/
+        position: absolute;
+        bottom: -200px;
+        /* top: 140px; */
+        right: 600px;
+        color: white;
+        padding: 0 10px;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    .login-big {
+        display: none;
+    }
+
+    .second-container {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 1415px) {
+    .login-big {
+        margin-top: 9vw;
+        height: 400px;
+        width: 29vw;
+        /* margin-left: 50px; */
+    }
+
+    .carousel {
+        margin-top: 30px;
+        /* width: 50vw; */
+    }
+
+    form button {
+        margin-bottom: 7px;
+        padding: 3px 9px 3px 9px;
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+
+    input {
+        width: 250px;
+        height: 50px;
+    }
+}
+
+@media only screen and (min-width: 1120px) and (max-width: 1240px) {
+    .box-text {
+        font-size: 15px;
+        /* padding-left: 2px; */
+    }
+}
+
+@media (max-width: 1240px) {
+    .login-big {
+        margin-top: 10vw;
+        height: 350px;
+        width: 25vw;
+        /* margin-left: 50px; */
+    }
+
+    /* .box-text{
+        font-size: 1.5rem;
+    } */
+
+    form button {
+        margin-bottom: 7px;
+        padding: 3px 9px 3px 9px;
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+
+    input {
+        width: 200px;
+        height: 30px;
+    }
+
+    .input-div {
+        margin-top: 0;
+    }
+
+    ::placeholder {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1410px) {
+    .input-div {
+        margin-top: 50px;
+    }
+
+    .login-big {
+        padding: 15px;
+    }
+}
+
+/* MY CSS */
+
+/* global css */
+
+hr {
+    border-top: 5px dotted #4b4c4c;
+    border-style: none;
+    background-color: white;
+    border-top-style: dotted;
+    margin: auto;
+    width: 3rem;
+}
+
+body {
+    /* background: var(--main-bg-color); */
+    background-color: var(--main-bg-color);
+}
+
+.FAQs {
+    height: 5vh;
+}
+
+/* navigation panel */
+
+nav {
+    background-color: var(--bluish-cyan);
+}
+
+.title {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-800);
+    color: rgb(232, 232, 232);
+}
+
+.nest {
+    width: 4.5rem;
+    position: absolute;
+    top: 24px;
+    left: 190px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.slogan {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-500)
+}
+
+/* carousel */
+
+.carousel-form-grid {
+    margin: 0 auto;
+}
+
+.carousel {
+    /*This should be in media query*/
+    padding: 8.5%;
+    /* min-width: 600px; */
+}
+
+.img-text h2 {
+    font-size: 6vh;
+}
+
+.img-text p {
+    font-size: 3.5vh;
+}
+
+@media (max-width: 675px) {
+    .img-text h2 {
+        font-size: 6vw;
+    }
+
+    .img-text p {
+        font-size: 3.5vw;
+    }
+}
+
+.bottom-left {
+    /* this should be in media query*/
+    position: absolute;
+    bottom: -10px;
+    /* top: 140px; */
+    right: 50px;
+    color: white;
+    padding: 0 10px;
+}
+
+/* MAIN CONTENT */
+
+.main-container {
+    text-align: center;
+    padding: 1%;
+    /* background-color: red; */
+}
+
+.box {
+    /* margin: 2rem; */
+    margin: 2rem 0 2rem 2.5rem;
+    text-align: left;
+}
+
+em {
+    font-weight: var(--fw-bold)
+}
+
+.box-img {
+    width: 4rem;
+    /* padding: 20px; */
+    margin: 20px;
+}
+
+.box-img-4,
+.box-img-5,
+.box-img-6 {
+    width: 25rem;
+    /* max-width: 10rem; */
+    margin: 0 auto;
+}
+
+.box-img-4,
+.box-img-6 {
+    margin-top: 30px;
+}
+
+.box-img-5 {
+    margin-top: 50px;
+}
+
+.box-1 {
+    /* background-color: blue; */
+    /* margin-left: 10vw; */
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+        "box-text img-div";
+}
+
+.box-2 {
+    /* margin-left: 8vw; */
+    display: grid;
+    grid-gap: 0.5rem;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    grid-template-areas:
+        "box-text img-div";
+}
+
+.box-3 {
+    /* margin-left: 10vw; */
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+        "box-text img-div";
+}
+
+.box-text {
+    margin-top: 1rem;
+    /* font-size: 18px; */
+}
+
+.second-container {
+    margin: 110px;
+    margin-top: 0;
+}
+
+.box-4 {
+    /* background-color: blue; */
+    /* margin-left: 10vw; */
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+        "box-text img-div";
+    /* margin-left: 250px; */
+}
+
+.box-5 {
+    /* margin-left: 8vw; */
+    display: grid;
+    grid-gap: 0.5rem;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    grid-template-areas:
+        "box-text img-div";
+    /* margin-left: 250px; */
+}
+
+.box-6 {
+    /* margin-left: 10vw; */
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+        "box-text img-div";
+    /* margin-left: 250px; */
+}
+
+.box-text-4 p,
+.box-text-5 p,
+.box-text-6 p {
+    font-size: 1.2rem;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 90px;
+}
+
+/* pricing section */
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 20px;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+/* Pricing header */
+.price .header {
+    background-color: var(--bluish-cyan);
+    color: white;
+    /* font-size: 25px; */
+}
+
+/* List items */
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+    background-color: #111;
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.grey a {
+    color: rgb(189, 189, 189);
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    background-color: grey;
+    margin-top: 40px;
+    height: 60px;
+}
+
+.flat-btn {
+    text-decoration: none;
+    color: rgb(52, 51, 51);
+    font-size: 15px;
+}
+
+.flat-btn:hover {
+    color: rgb(186, 184, 184);
+}
+
+.foot-ele {
+    padding-top: 5px;
+}
+
+/* ****************************************************************** */
+
+/* Below is the css reset i used from Andy bells github page, i like the most because it undos all the predefined properties by many of the browsers */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}

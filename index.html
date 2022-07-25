@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BusyNest</title>
+    <!-- bootstrap css cdn -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery accordian style sheet -->
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <!-- my style sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- navbar and other links -->
+
+    <nav class="navbar navbar-dark navbar-expand-lg">
+        <a href="index.html" class="navbar-brand ms-3 mt-3 mb-2 title">BusyNest
+            <p class="slogan">Drive home success</p>
+        </a>
+        <img src="nest3.png" alt="nest image navbar-brand" class="nest">
+
+        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-4" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ms-auto me-4">
+                <li class="nav-item vertical-sep">
+                    <a href="signin.html" class="nav-link text-light">Sign In</a>
+                </li>
+                <li class="nav-item vertical-sep">
+                    <a href="about.html" class="nav-link text-light">What we do</a>
+                </li>
+                <li class="nav-item vertical-sep">
+                    <a href="contact.html" class="nav-link text-light">Contact us</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="services.html" class="nav-link text-light">Services</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- carousel -->
+    <div class="carousel-form-grid">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="office2.jpg" class="d-block w-100" alt="...">
+                    <div class="img-text bottom-left">
+                        <h2>Business Mentorship</h2>
+                        <p>Get business mentorship from the top business consultants.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="productivity2.jpg" class="d-block w-100" alt="...">
+                    <div class="img-text bottom-left">
+                        <h2>Productivity Driven</h2>
+                        <p>We will help you make the difficult decisions, which will drive your company to success. </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="statistics2.jpg" class="d-block w-100" alt="...">
+                    <div class="img-text bottom-left">
+                        <h2>Statistical Analysis</h2>
+                        <p>Get a detailed monthly report of your company's performance in the market.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- login when the screen is big -->
+
+        <form class="login-big form" action="/" method="post">
+            <p class="sign-in">
+                Sign In
+            </p>
+            <div class="input-div">
+                <input type="text" placeholder="User name">
+                <br>
+                <br>
+                <input type="email" placeholder="Email">
+                <br>
+                <br>
+                <input type="password" placeholder="Password">
+            </div>
+            <button>
+                Sign In
+            </button>
+            <p class="dont-have">Don't have an account ?<a href="signin.html">create one</a></p>
+        </form>
+    </div>
+
+    <hr>
+
+    <!-- Main content -->
+
+    <div class="main-container">
+        <div class="box box-1">
+            <div class="box-text">
+                <em>Design</em> a business model with one of our best business consultants.
+            </div>
+            <div class="img-div">
+                <img src="design.png" class="box-img" alt="dice-image">
+            </div>
+        </div>
+        <hr class = "small-hr">
+        <div class="box box-2">
+            <div class="img-div">
+                <img src="resonate.png" class="box-img" alt="dice-image">
+            </div>
+            <div class="box-text">
+                Let the work we put in, <em>resonate</em> with the output of your company.
+            </div>
+        </div>
+        <hr class = "small-hr">
+        <div class="box box-3">
+            <div class="box-text">
+                <em>Trust</em>, is very important in a business and we value it in every aspect.
+            </div>
+            <div class="img-div">
+                <img src="trust.png" class="box-img" alt="dice-image">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- below is grid on large screens -->
+    <div class="second-container">
+        <div class="box box-4">
+            <div class="box-text-4">
+                <p><em>Guide</em> your way through success with our best in class business coaching sessions. Our clients are evident of the benefits, coaching has on an individual and on the company as a whole.</p>
+            </div>
+            <div class="img-div img-div-4">
+                <img src="coach.jpg" class="box-img-4 right" alt="dice-image">
+            </div>
+        </div>
+        <hr>
+        <div class="box box-5">
+            <div class="img-div img-div-5">
+                <img src="rise.jpg" class="box-img-5" alt="dice-image">
+            </div>
+            <div class="box-text-5">
+                <p>Our consultancy services have helped countless businesses to <em>Rise</em> through the challenges that the market throuws at them. Our consultants have been trained to assist and guide your company through rough times.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="box box-6">
+            <div class="box-text-6">
+                <p><em>Risks</em> are inevitable when it comes to business, if you want to push your company to success you have to take risks. Don't worry we've got you covered, our statistical unit will help you and your company to take <em>calculated risks</em> for long term benefits.</p>
+            </div>
+            <div class="img-div img-div-6">
+                <img src="decision.jpg" class="box-img-6" alt="dice-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery accordian -->
+
+    <div id="accordion">
+        <h3>General FAQs</h3>
+        <div class="FAQs">
+            <p>
+            <p class="question">Q) What services do you offer ?</p>
+            - You can view our services in our "Services" page
+            </p>
+            <hr>
+            <p>
+            <p class="question">Q) How do you generate statistical data for a company ?</p>
+            - We have a data science technical team, which analyses the growth and fall of a company and gives tips to
+            improve quality and performance of the comapany.
+            </p>
+            <hr>
+            <p>
+            <p class="question">Q) How do you cope with recession and inflation ?</p>
+            - Well we aim to provide the best possible services to our clients, we are always prepared if the market
+            throws tantrums, as our business model is not effected by such ups and downs.
+            </p>
+            <hr>
+            <p>For more FAQs and company insight <a href="faqs.html">visit</a> our FAQs page.</p>
+        </div>
+        <h3>Pricing and Offers</h3>
+        <div>
+            <div class="columns">
+                <div class="basic pricing">
+                    <ul class="price">
+                        <li class="header">Basic</li>
+                        <li class="grey">$ 25,000 / year</li>
+                        <li class = "li-font">2 Business consultants</li>
+                        <li class = "li-font">3 Company roundtable meetings</li>
+                        <li class = "li-font">Partnership Benefits upto 5%</li>
+                        <li class="grey"><a href="#" class="button">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="pro pricing">
+                    <ul class="price">
+                        <li class="header">Pro</li>
+                        <li class="grey">$ 50,000 / year</li>
+                        <li class="li-font">3 Business consultants</li>
+                        <li class="li-font">4 Company roundtable meetings</li>
+                        <li class="li-font">Partnership Benefits upto 7%</li>
+                        <li class="grey"><a href="#" class="button">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="premium pricing">
+                    <ul class="price">
+                        <li class="header">Premium</li>
+                        <li class="grey">$ 75,000 / year</li>
+                        <li class="li-font">5 Business consultants</li>
+                        <li class="li-font">6 Company roundtable meetings</li>
+                        <li class="li-font">Partnership Benefits upto 9%</li>
+                        <li class="grey"><a href="#" class="button">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#accordion").accordion({ active: false, collapsible: true});
+        });
+    </script>
+    <footer>
+        <div class="foot-ele">
+            <div class="flat-btn-div">
+                <a href="flaticon.html" class="flat-btn">Flaticon Resources</a>
+            </div>
+            <p>&copy; Busynest 2013</p>
+        </div>
+    </footer>
+</body>
+
+</html>
